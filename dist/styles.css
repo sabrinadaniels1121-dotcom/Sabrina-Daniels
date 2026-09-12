@@ -1,4 +1,6 @@
-:root { --ink:#371D84; --violet:#574193; --yellow:#FFCA05; --paper:#fffdf8; --rosebud:"Playfair Display", Georgia, serif; --lato:Lato, Arial, sans-serif; }
+@font-face { font-family:"Rosebud"; src:url("fonts/Rosebud.ttf") format("truetype"); font-display:swap; }
+@font-face { font-family:"Montserrat"; src:url("fonts/Montserrat-VariableFont_wght.ttf") format("truetype"); font-style:normal; font-weight:100 900; font-display:swap; }
+:root { --ink:#371D84; --violet:#574193; --yellow:#FFCA05; --paper:#fffdf8; --rosebud:"Rosebud", Georgia, serif; --lato:"Montserrat", Arial, sans-serif; }
 * { box-sizing:border-box; } html { scroll-behavior:smooth; } body { margin:0; color:var(--paper); background:var(--ink); font-family:var(--lato); } a { color:inherit; text-decoration:none; }
 .site-header { align-items:center; background:var(--ink); display:flex; height:76px; justify-content:space-between; padding:0 5vw; position:sticky; top:0; z-index:10; }
 .wordmark { font:600 1rem/0.8 var(--rosebud); letter-spacing:-.06em; } nav { display:flex; gap:2rem; font-size:.81rem; } nav a { border-bottom:1px solid transparent; padding:.4rem 0; } nav a:hover { border-color:var(--yellow); } .menu-button { display:none; }
