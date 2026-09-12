@@ -4,7 +4,7 @@
 * { box-sizing:border-box; } html { scroll-behavior:smooth; } body { margin:0; color:var(--paper); background:var(--ink); font-family:var(--lato); } a { color:inherit; text-decoration:none; }
 .site-header { align-items:center; background:var(--ink); display:flex; height:76px; justify-content:space-between; padding:0 5vw; position:sticky; top:0; z-index:10; }
 .wordmark { display:block; line-height:0; } .wordmark img { display:block; height:auto; width:clamp(7.2rem,12vw,10.5rem); } nav { display:flex; gap:2rem; font-size:.81rem; } nav a { border-bottom:1px solid transparent; padding:.4rem 0; } nav a:hover { border-color:var(--yellow); } .menu-button { display:none; }
-.hero { align-items:center; background:#574193; display:grid; gap:0; grid-template-columns:minmax(300px, 510px) minmax(280px, 420px); justify-content:center; min-height:780px; overflow:hidden; padding:clamp(5rem,8vw,8rem) 8vw; }
+.hero { align-items:center; background:#574193; display:grid; gap:0; grid-template-columns:minmax(300px, 510px) minmax(280px, 420px); justify-content:center; min-height:780px; overflow:hidden; padding:clamp(2.5rem,5vw,4.5rem) 8vw clamp(5rem,8vw,8rem); }
 .hero-mask-defs { height:0; position:absolute; width:0; }
 .hero-portrait { align-self:center; clip-path:url(#hero-arch); height:clamp(470px,45vw,680px); margin:0; overflow:hidden; width:100%; }
 .hero-portrait img { display:block; height:100%; object-fit:cover; object-position:center top; width:100%; }
