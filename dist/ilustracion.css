@@ -1,5 +1,5 @@
 .project-page { background:var(--violet); }
-.project-intro { background:var(--violet); color:#fff; min-height:clamp(22rem,44vw,34rem); padding:clamp(3rem,7vw,6.5rem) 12vw; }
+.project-intro { background:var(--ink); color:#fff; min-height:clamp(22rem,44vw,34rem); padding:clamp(3rem,7vw,6.5rem) 12vw; }
 .project-intro .back-link { display:inline-block; font-size:.82rem; margin-bottom:clamp(3.5rem,8vw,7.5rem); }
 .project-intro .back-link:hover { text-decoration:underline; }
 .project-intro .eyebrow { font-weight:700; margin-bottom:1rem; }
