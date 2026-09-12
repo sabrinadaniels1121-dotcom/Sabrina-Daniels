@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Proyectos de Sabrina Daniels." />
+    <title>Proyectos — Sabrina Daniels</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23371D84'/%3E%3Cpath d='M18 43c12-2 15-15 28-20' stroke='%23FFCA05' stroke-width='6' stroke-linecap='round'/%3E%3Ccircle cx='43' cy='21' r='5' fill='%23FFCA05'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="ilustracion.css" />
+  </head>
+  <body class="project-page">
+    <header class="site-header">
+      <a class="wordmark" href="index.html" aria-label="Volver al inicio"><img src="images/logo-sabrina.png" alt="Sabrina Daniels" /></a>
+      <nav aria-label="Navegación principal">
+        <a href="index.html">Inicio</a>
+        <a href="index.html#work">Portafolio</a>
+        <a href="index.html#contact">Contacto</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="project-intro" aria-labelledby="project-title">
+        <a class="back-link" href="index.html#work">← Volver al portafolio</a>
+        <h1 id="project-title">Branding</h1>
+        <p id="project-description">Una selección de proyectos creativos.</p>
+      </section>
+
+      <section class="project-gallery" aria-label="Galería de proyectos">
+        <div class="illustration-controls">
+          <button class="illustration-arrow" type="button" data-illustration-prev aria-label="Proyecto anterior">←</button>
+          <button class="illustration-arrow" type="button" data-illustration-next aria-label="Proyecto siguiente">→</button>
+        </div>
+        <div class="illustration-carousel" aria-roledescription="carrusel" aria-label="Proyectos">
+          <div class="illustration-track">
+            <figure class="illustration-slide illustration-slide--paper" aria-hidden="true"></figure>
+            <figure class="illustration-slide illustration-slide--lilac" aria-hidden="true"></figure>
+            <figure class="illustration-slide illustration-slide--yellow" aria-hidden="true"></figure>
+            <figure class="illustration-slide illustration-slide--paper" aria-hidden="true"></figure>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>© 2026 Sabrina Daniels</span>
+      <div class="social-icons" aria-label="Redes sociales">
+        <a class="social-icon" href="https://www.tiktok.com/@sabrinadaniels21" target="_blank" rel="noopener noreferrer" aria-label="TikTok de Sabrina Daniels"><img src="images/tiktok.png" alt="" /></a>
+        <a class="social-icon" href="https://www.linkedin.com/in/sabrina-daniels-valencia-graphic-design/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Sabrina Daniels"><img src="images/linkedin.png" alt="" /></a>
+        <a class="social-icon social-icon--behance" href="https://www.behance.net/sabrinadaniels21" target="_blank" rel="noopener noreferrer" aria-label="Behance de Sabrina Daniels"><img src="images/behance.png" alt="" /></a>
+      </div>
+    </footer>
+    <script src="proyecto.js"></script>
+    <script src="ilustracion.js"></script>
+  </body>
+</html>
