@@ -6,13 +6,8 @@
 .project-intro h1 { font:400 clamp(4rem,11vw,10rem)/.82 var(--rosebud); letter-spacing:-.025em; margin:0 0 1.6rem; }
 .project-intro > p:last-child { font-size:clamp(1rem,1.6vw,1.25rem); line-height:1.45; margin-bottom:0; max-width:31rem; }
 .project-gallery { display:grid; gap:clamp(1rem,2.5vw,2.4rem); grid-template-columns:1.7fr 1fr; margin:0 auto; max-width:104rem; padding:clamp(3rem,7vw,7rem) 8vw; }
-.gallery-feature { grid-row:span 2; margin:0; min-height:clamp(24rem,56vw,50rem); position:relative; }
+.gallery-feature { grid-row:span 2; margin:0; min-height:clamp(24rem,56vw,50rem); }
 .gallery-feature img { display:block; height:100%; object-fit:cover; width:100%; }
-.gallery-feature figcaption { background:var(--ink); bottom:0; color:#fff; display:flex; flex-direction:column; gap:.25rem; left:0; padding:1.1rem 1.25rem; position:absolute; }
-.gallery-feature figcaption span { font-size:.72rem; letter-spacing:.1em; text-transform:uppercase; }
-.gallery-feature figcaption strong { font:400 clamp(1.8rem,3vw,3rem)/1 var(--rosebud); letter-spacing:normal; }
-.gallery-placeholder { align-items:flex-end; background:var(--paper); color:var(--ink); display:flex; justify-content:space-between; min-height:clamp(11rem,25vw,22rem); padding:1.25rem; }
-.gallery-placeholder span { font:400 clamp(3.3rem,7vw,6rem)/.8 var(--rosebud); }
-.gallery-placeholder p { font-size:.75rem; letter-spacing:.1em; margin:0; text-transform:uppercase; }
+.gallery-placeholder { background:var(--paper); min-height:clamp(11rem,25vw,22rem); }
 .gallery-placeholder--violet { background:#7260a7; color:#fff; }
 @media (max-width:760px) { .project-intro { min-height:0; padding:3rem 8vw 4rem; } .project-intro .back-link { margin-bottom:3.5rem; } .project-gallery { grid-template-columns:1fr; padding:3rem 8vw; } .gallery-feature { grid-row:auto; min-height:31rem; } .gallery-placeholder { min-height:13rem; } }
