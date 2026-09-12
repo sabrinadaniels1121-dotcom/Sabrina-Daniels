@@ -27,11 +27,19 @@
       </section>
 
       <section class="project-gallery" aria-label="Galería de ilustración">
-        <figure class="gallery-feature">
-          <img src="images/ilustracion.png" alt="Ilustración aplicada a un libro, marcapáginas y bolso" />
-        </figure>
-        <div class="gallery-placeholder" aria-hidden="true"></div>
-        <div class="gallery-placeholder gallery-placeholder--violet" aria-hidden="true"></div>
+        <div class="illustration-controls">
+          <button class="illustration-arrow" type="button" data-illustration-prev aria-label="Ilustración anterior">←</button>
+          <button class="illustration-arrow" type="button" data-illustration-next aria-label="Ilustración siguiente">→</button>
+        </div>
+        <div class="illustration-carousel" aria-roledescription="carrusel" aria-label="Proyectos de ilustración">
+          <div class="illustration-track">
+            <figure class="illustration-slide">
+              <img src="images/ilustracion.png" alt="Ilustración aplicada a un libro, marcapáginas y bolso" />
+            </figure>
+            <figure class="illustration-slide illustration-slide--paper" aria-hidden="true"></figure>
+            <figure class="illustration-slide illustration-slide--lilac" aria-hidden="true"></figure>
+          </div>
+        </div>
       </section>
     </main>
 
@@ -43,5 +51,6 @@
         <a class="social-icon social-icon--behance" href="https://www.behance.net/sabrinadaniels21" target="_blank" rel="noopener noreferrer" aria-label="Behance de Sabrina Daniels"><img src="images/behance.png" alt="" /></a>
       </div>
     </footer>
+    <script src="ilustracion.js"></script>
   </body>
 </html>
