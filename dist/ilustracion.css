@@ -12,8 +12,9 @@
 .illustration-carousel { overflow:hidden; width:100%; }
 .illustration-track { display:flex; gap:1.5rem; touch-action:pan-y; transition:transform .55s cubic-bezier(.2,.75,.25,1); will-change:transform; }
 .illustration-track.is-dragging { cursor:grabbing; transition:none; }
-.illustration-slide { aspect-ratio:1.44; background:var(--yellow); flex:0 0 clamp(22rem,68vw,56rem); margin:0; overflow:hidden; user-select:none; }
+.illustration-slide { aspect-ratio:1.44; background:var(--yellow); flex:0 0 clamp(22rem,68vw,56rem); margin:0; overflow:hidden; position:relative; user-select:none; }
 .illustration-slide img { display:block; height:100%; object-fit:cover; width:100%; }
+.illustration-caption { background:rgba(242,242,242,.9); bottom:1rem; color:var(--ink); font-size:clamp(.68rem,1vw,.82rem); letter-spacing:.08em; padding:.5rem .65rem; position:absolute; right:1rem; text-transform:uppercase; }
 .illustration-slide--paper { background:var(--paper); }
 .illustration-slide--lilac { background:#8c79ba; }
 @media (max-width:760px) { .project-intro { min-height:0; padding:3rem 8vw 4rem; } .project-intro .back-link { margin-bottom:3.5rem; } .illustration-controls { padding:0 7vw 1.2rem; } .illustration-slide { flex-basis:84vw; } }
