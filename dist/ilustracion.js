@@ -25,6 +25,7 @@
   window.addEventListener('resize', update);
 
   track.addEventListener('pointerdown', (event) => {
+    if (event.target.closest('video, button, iframe')) return;
     pointerStart = event.clientX;
     dragging = true;
     track.classList.add('is-dragging');
