@@ -64,14 +64,26 @@
   }
 
   if (key === 'diseno-web') {
-    const webDesignSlide = document.querySelector('.illustration-slide');
-    if (!webDesignSlide) return;
+    const webDesignSlides = document.querySelectorAll('.illustration-slide');
+    const webDesignSlide = webDesignSlides[0];
+    const websitePromoSlide = webDesignSlides[1];
+    if (!webDesignSlide || !websitePromoSlide) return;
+
+    webDesignSlides[3]?.remove();
 
     webDesignSlide.className = 'illustration-slide project-video-slide';
     webDesignSlide.removeAttribute('aria-hidden');
     webDesignSlide.innerHTML = `
-      <video controls playsinline preload="metadata" aria-label="Video promocional de diseño web">
+      <video controls playsinline preload="metadata" poster="images/djebess-video-cover.png" aria-label="Video promocional de diseño web">
         <source src="videos/promo-website.mp4" type="video/mp4" />
+        Tu navegador no admite este video.
+      </video>`;
+
+    websitePromoSlide.className = 'illustration-slide project-video-slide';
+    websitePromoSlide.removeAttribute('aria-hidden');
+    websitePromoSlide.innerHTML = `
+      <video controls playsinline preload="metadata" poster="images/trinet-video-cover.png" aria-label="Video promocional de sitio web">
+        <source src="videos/website-promo.m4v" type="video/mp4" />
         Tu navegador no admite este video.
       </video>`;
   }

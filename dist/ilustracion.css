@@ -25,6 +25,7 @@
 .project-video-slide video { display:block; height:100%; max-width:100%; object-fit:contain; width:100%; }
 .project-page .illustration-carousel { padding:0 8vw; }
 .project-page .illustration-slide { flex-basis:clamp(18rem,56vw,46rem); }
+.project-page--diseno-web .illustration-slide { aspect-ratio:16 / 9; }
 .illustration-caption { background:rgba(242,242,242,.9); bottom:1rem; color:var(--ink); font-size:clamp(.68rem,1vw,.82rem); letter-spacing:.08em; padding:.5rem .65rem; position:absolute; right:1rem; text-transform:uppercase; }
 .illustration-slide--paper { background:var(--paper); }
 .illustration-slide--lilac { background:#8c79ba; }
