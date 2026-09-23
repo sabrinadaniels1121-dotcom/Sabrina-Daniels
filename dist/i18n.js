@@ -41,6 +41,7 @@
   };
 
   const languageButton = document.querySelector('[data-language-toggle]');
+  const cvLink = document.querySelector('[data-cv-link]');
   const isHome = document.querySelector('.hero');
   const projectKey = new URLSearchParams(window.location.search).get('proyecto');
   const isIllustration = document.body.classList.contains('project-page') && !projectKey;
@@ -113,6 +114,7 @@
       languageButton?.querySelectorAll('[data-language-option]').forEach((option) => {
         option.classList.toggle('is-active', option.dataset.languageOption === 'en');
       });
+      if (cvLink) cvLink.href = 'CV-Sabrina-Daniels-EN.pdf';
     } else {
       localStorage.removeItem('portfolio-language');
       window.location.reload();
